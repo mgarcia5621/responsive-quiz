@@ -15,9 +15,10 @@
 }
 
 h1 {
-    font-size: 5.4rem;
+    font-size: 3.4rem;
     color: white;
     margin-bottom: 5rem;
+    margin: 20px;
 }
 
 .h2 {
@@ -70,7 +71,7 @@ h1 {
     background: linear-gradient(to right, #8E54E9, #4776E6);
     border-radius: 4px;
     margin: 2rem;
-    
+    margin-right: 40px;
 }
 
 .btn:hover {
