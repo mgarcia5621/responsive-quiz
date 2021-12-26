@@ -63,5 +63,6 @@ getNewQuestion = () => {
 
     questionCounter++
     progressText.innerText = 'Question ${questionCounter} of ${MAX_QUESTIONS}'
+    
 
 }
