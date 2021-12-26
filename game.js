@@ -56,5 +56,12 @@ startGame = () => {
 }
 
 getNewQuestion = () => {
-    if(availableQuestions.length === 0  )
+    if(availableQuestions.length === 0 || questionsCounter > MAX_QUESTIONS) {
+        localStorage.setItem('mostRecentScore', score)
+        return window.location.assign('/end.html')
+    }
+
+    questionCounter++
+    progressText.innerText = 'Question ${questionCounter} of ${MAX_QUESTIONS}'
+
 }
