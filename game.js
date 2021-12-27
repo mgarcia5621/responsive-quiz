@@ -70,6 +70,21 @@ getNewQuestion = () => {
     question.innerText = currentQuestion.question
     choices.forEach(choice => {
         const number = choice.dataset['number']
-        choice.innerText = currentQuestion[]
+        choice.innerText = currentQuestion['choice' + number]
     })
+    availableQuestions.splice(questionsIndex, 1)
+
+    acceptingAnswer = true
 }
+
+choices.forEach(choice => {
+    choice.addEventListener('click', e => {
+        if(!acceptingAnswer) return
+
+        acceptingAnswer = false
+        const selectedChoice = e.target
+        const selectedAnswer = selectedChoice.dataset['number']
+
+        let
+    })   
+})
