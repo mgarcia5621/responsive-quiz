@@ -17,7 +17,7 @@ let questions = [
         choice2: '1',
         choice3: '4',
         choice4: '32',
-        answer: 3,
+        answer: 2,
     },
     {
         question: 'When is Mateos birthday?',
@@ -25,7 +25,7 @@ let questions = [
         choice2: '24',
         choice3: '29',
         choice4: '27',
-        answer: 4,
+        answer: 3,
     },
     {
         question: 'Where is the tallest building located?',
@@ -33,7 +33,7 @@ let questions = [
         choice2: 'New York',
         choice3: 'Chicago',
         choice4: 'Texas',
-        answer: 1,
+        answer: 0,
     },
     {
         question: 'What grade is Mateo in?',
@@ -41,7 +41,7 @@ let questions = [
         choice2: '4th',
         choice3: '11th',
         choice4: '3rd',
-        answer: 2,
+        answer: 0,
     },
 ]
 
@@ -62,8 +62,8 @@ getNewQuestion = () => {
     }
 
     questionCounter++
-    progressText.innerText = 'Question ${questionCounter} of ${MAX_QUESTIONS}'
-    progressBarFull.style.width = '${(questionCounter/MAX_QUESTIONS) * 100}%'
+    progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
+    progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`
     
     const questionIndex = Math.floor(Math.random() * availableQuestions.length)
     currentQuestion = availableQuestions[questionIndex]
