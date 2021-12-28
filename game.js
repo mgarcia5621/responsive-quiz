@@ -77,7 +77,7 @@ getNewQuestion = () => {
     acceptingAnswer = true
 }
 
-choices.forEach(choice => {
+choicqes.forEach(choice => {
     choice.addEventListener('click', e => {
         if(!acceptingAnswer) return
 
