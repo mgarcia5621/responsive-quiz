@@ -121,3 +121,29 @@ input {
     border: none;
     box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
 }
+
+input::placeholder {
+    color: #aaa;
+}
+
+#username {
+    margin-bottom: 3rem;
+    width: 100%;
+    outline: none;
+}
+
+#end-text {
+    color: white;
+    text-align: center;
+    font-size: 2.4rem
+}
+
+#saveScoreBtn {
+    border: none;
+}
+
+.fa-home {
+    margin-left: 1rem;
+    font-size: 2rem;
+    color: rgb(26, 26, 26);
+}
